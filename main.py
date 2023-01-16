@@ -1,17 +1,10 @@
 import speech_recognition as sr
-import datetime
 import threading 
-import time
-import os
 import gtts
 from playsound import playsound
 from openai_module import Openai_Model
 from pydub import AudioSegment
-import soundfile as sf
-import pyrubberband as pyrb
-from pygame import mixer
 from pydub import AudioSegment
-import multiprocessing
 import PlaySound
 
 ai = Openai_Model()
@@ -33,6 +26,7 @@ def say(text):
             sound.stop_playing()
         with open(soundfilename, 'w') as f:
             tts.save(soundfilename)
+
     except:
         say(text)
         
