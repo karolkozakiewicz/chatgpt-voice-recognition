@@ -1,0 +1,5 @@
+gTTS==2.3.0
+SpeechRecognition==3.9.0
+playsound==1.2.2
+pydub==0.25.1
+openai==0.26.1
